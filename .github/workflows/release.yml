@@ -9,6 +9,12 @@ jobs:
   release_packages:
     name: Release Packages
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      packages: write
+      pull-requests: write
+      issues: read
     steps:
       - name: Checkout Repo
         uses: actions/checkout@master
