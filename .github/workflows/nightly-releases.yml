@@ -15,7 +15,7 @@ on:
   schedule:
     # Every day at 7pm UTC / 2pm CST
     # - cron: '0 19 * * *'
-    - cron: '25 18 * * *'
+    - cron: '29 20 * * *'
 
 jobs:
   release_nightly_canary:
