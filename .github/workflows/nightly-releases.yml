@@ -14,7 +14,8 @@ name: Nightly Releases
 on:
   schedule:
     # Every day at 7pm UTC / 2pm CST
-    - cron: '0 19 * * *'
+    # - cron: '0 19 * * *'
+    - cron: '25 18 * * *'
 
 jobs:
   release_nightly_canary:
@@ -45,7 +46,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       # https://github.com/atlassian/changesets/blob/master/docs/snapshot-releases.md
-      - name: Release to @pr channel
+      - name: Release to NPM
         run: |
           npm run version:nightly
           npm run release:nightly
