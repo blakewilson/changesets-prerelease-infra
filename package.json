@@ -10,7 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "",
     "release": "npm run build && changeset publish",
-    "version": "changeset version"
+    "release:nightly": "npm run release -- --tag canary",
+    "version": "changeset version",
+    "version:nightly": "npm run version -- --snapshot"
   },
   "keywords": [],
   "author": "",
