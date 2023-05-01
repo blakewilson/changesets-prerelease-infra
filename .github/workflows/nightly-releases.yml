@@ -14,8 +14,8 @@ name: Nightly Releases
 on:
   schedule:
     # Every day at 7pm UTC / 2pm CST
-    # - cron: '0 19 * * *'
-    - cron: '*/5 * * * *'
+    - cron: '0 19 * * *'
+    # - cron: '*/5 * * * *'
 
 jobs:
   release_nightly_canary:
